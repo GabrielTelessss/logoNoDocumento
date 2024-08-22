@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Logos</title>
+    <link rel="stylesheet" href="./src/style/orcamento.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+        integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gerador Orçamento</h1>
+
+        <!-- Input para selecionar as imagens -->
+            <label for="image1">Selecione a primeira imagem:</label>
+            <input type="file" id="image1" accept="image/*">
+            <label for="image2">Selecione a segunda imagem:</label>
+            <input type="file" id="image2" accept="image/*">
+
+        <!-- Botão para gerar o arquivo -->
+        <button onclick="gerarArquivoA4()">Gerar Orçamento</button>
+
+        <!-- Área para exibir o arquivo gerado -->
+        <div id="output">
+            <p>Seu arquivo será exibido aqui:</p>
+            <iframe id="outputFrame"></iframe>
+        </div>
+        <br>
+        <button onclick="downloadBmp()">Baixar</button>
+    </div>
+
+    <script src="./src/scritp/orcamento.js"></script>
+</body>
+
+</html>
