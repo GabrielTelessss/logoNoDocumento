@@ -21,7 +21,7 @@ function gerarArquivoA4() {
             const originalWidthImg1 = img1.width;
             const originalHeightImg1 = img1.height;
             const aspectRatioImg1 = originalWidthImg1 / originalHeightImg1;
-            const newWidthImg1 = 79.3750; // Ajuste de largura
+            const newWidthImg1 = 60; // Ajuste de largura
             const newHeightImg1 = newWidthImg1 / aspectRatioImg1;
 
             pdfDocument.addImage(img1, 'JPEG', 1, 1, newWidthImg1, newHeightImg1); // X, y, largura, altura
@@ -76,7 +76,7 @@ async function downloadBmp() {
         // Baixar o BMP
         const link = document.createElement('a');
         link.href = bmpImageDataUrl;
-        link.download = 'CriticaDaOs.bmp';
+        link.download = 'CartaDeCobranca.bmp';
         link.click();
     }).catch(function(error) {
         console.error('Erro ao carregar o PDF:', error);

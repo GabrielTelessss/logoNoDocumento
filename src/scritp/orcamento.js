@@ -27,16 +27,16 @@ function gerarArquivoA4() {
                     const originalWidthImg1 = img1.width;
                     const originalHeightImg1 = img1.height;
                     const aspectRatioImg1 = originalWidthImg1 / originalHeightImg1;
-                    const newWidthImg1 = 40;
+                    const newWidthImg1 = 38;
                     const newHeightImg1 = newWidthImg1 / aspectRatioImg1;
 
-                    pdfDocument.addImage(img1, 'JPEG', 0.5292, 0.7937, newWidthImg1, newHeightImg1); // X, y. largura, altura
+                    pdfDocument.addImage(img1, 'JPEG', 0.5292, 0.4, newWidthImg1, newHeightImg1); // X, y. largura, altura
                     pdfDocument.setGState(new pdfDocument.GState({ opacity: 0.1 }));
 
                     const originalWidthImg2 = img2.width;
                     const originalHeightImg2 = img2.height;
                     const aspectRatioImg2 = originalWidthImg2 / originalHeightImg2;
-                    const newWidthImg2 = 162.9833;
+                    const newWidthImg2 = 155;
                     const newHeightImg2 = newWidthImg2 / aspectRatioImg2;
 
                     pdfDocument.addImage(img2, 'JPEG', 11.1125, 96.3083, newWidthImg2, newHeightImg2); // X, y. largura, altura

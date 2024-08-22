@@ -25,7 +25,7 @@ function gerarArquivoA4() {
             const newHeightImg1 = newWidthImg1 / aspectRatioImg1;
 
             pdfDocument.setGState(new pdfDocument.GState({ opacity: 0.1 }));
-            pdfDocument.addImage(img1, 'JPEG', 2, 47.6250, newWidthImg1, newHeightImg1); // X, y, largura, altura
+            pdfDocument.addImage(img1, 'JPEG', 2, 45, newWidthImg1, newHeightImg1); // X, y, largura, altura
 
             // Salva ou exibe o arquivo gerado
             const output = pdfDocument.output('blob');
@@ -77,7 +77,7 @@ async function downloadBmp() {
         // Baixar o BMP
         const link = document.createElement('a');
         link.href = bmpImageDataUrl;
-        link.download = 'CriticaDaOs.bmp';
+        link.download = 'Boleto.bmp';
         link.click();
     }).catch(function(error) {
         console.error('Erro ao carregar o PDF:', error);

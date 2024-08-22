@@ -25,7 +25,7 @@ function gerarArquivoA4() {
             const newHeightImg1 = newWidthImg1 / aspectRatioImg1;
 
             pdfDocument.setGState(new pdfDocument.GState({ opacity: 0.1 }));
-            pdfDocument.addImage(img1, 'JPEG', 20.6375, 132.2917, newWidthImg1, newHeightImg1); // X, y, largura, altura
+            pdfDocument.addImage(img1, 'JPEG', 27, 132.2917, newWidthImg1, newHeightImg1); // X, y, largura, altura
 
             // Salva ou exibe o arquivo gerado
             const output = pdfDocument.output('blob');
