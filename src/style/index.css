@@ -67,9 +67,22 @@ footer {
         font-size: 16px;
     }
 }
+@media (max-width: 865px){
+    main h2{
+        font-size: 13px;
+    }
+    .container img{
+        width: 100px;
+    }
+}
 
 @media (max-height: 750px) { 
     .container div {
         padding-top: 150px;
+    }
+}
+@media (max-height: 450px) { 
+    .container div {
+        padding-top: 30px;
     }
 }
